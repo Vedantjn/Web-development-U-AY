@@ -111,7 +111,7 @@ img {
     color: #067e7e;
 } */
 
-.container{
+.skills{
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -123,10 +123,11 @@ img {
 }
 
 .skillsheading{
-    margin-top: 100px;
+    margin-top: 180px;
     margin-bottom: 50px;
     color: #66bfbf;
     font-weight:500;
+
   }
   
 #skills p{
@@ -134,7 +135,7 @@ img {
 }
 
 #skills img{
-    width: 300px;
+    width: 60%;
     border-radius: 5%;
   }
 
@@ -150,7 +151,7 @@ img {
 
 #getintouch{
   height: 35vh;
-  margin-top: 400px;
+  margin-top: 300px;
 }
 
 .gith{
