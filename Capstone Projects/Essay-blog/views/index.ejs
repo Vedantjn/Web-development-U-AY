@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <%- include("partials/header.ejs") %>
+
+    <div>
+        <h1>Work List</h1>
+        <div>
+            <form action="/submit" method="POST">
+                <input type="text" placeholder="New Item" name="input-data">
+                <button type="submit">+</button>
+            </form>
+            <% if(locals['displayToDo']){ %>
+                <ul>
+                    <% locals['displayToDo'].forEach(item => { %>
+                        <li>
+                            <%= item.text %>
+                            <form action="/delete" method="POST" style="display:inline;">
+                                <input type="hidden" name="delete-id" value="<%= item.id %>">
+                                <button type="submit">-</button>
+                            </form>
+                        </li>
+                    <% }) %>
+                </ul>
+            <% } %>
+        </div>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
+
+</body>
+</html>
