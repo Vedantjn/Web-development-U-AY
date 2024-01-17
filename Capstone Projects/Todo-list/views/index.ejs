@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body class="site-body">
     
     <%- include("partials/header.ejs") %>
 
-    <div>
-        <h1>Work List</h1>
-        <div>
-            <form action="/submit" method="POST">
-                <input type="text" placeholder="New Item" name="input-data">
-                <button type="submit">+</button>
+    <div class="main-content">
+        <h1 class="page-title">To Do List</h1>
+        <div class="work-list-container">
+            <form action="/submit" method="POST" class="add-form">
+                <input type="text" placeholder="New Item" name="input-data" class="add-input">
+                <button type="submit" class="add-button">+</button>
             </form>
             <% if(locals['displayToDo']){ %>
-                <ul>
+                <ul class="todo-list">
                     <% locals['displayToDo'].forEach(item => { %>
-                        <li>
-                            <%= item.text %>
-                            <form action="/delete" method="POST" style="display:inline;">
-                                <input type="hidden" name="delete-id" value="<%= item.id %>">
-                                <button type="submit">-</button>
+                        <li class="todo-item">
+                            <span class="todo-text"><%= item.text %></span>
+                            <form action="/delete" method="POST" class="delete-form">
+                                <input type="hidden" name="delete-id" value="<%= item.id %>" class="delete-id-input">
+                                <button type="submit" class="delete-button">-</button>
                             </form>
                         </li>
                     <% }) %>
