@@ -9,7 +9,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "123456",
+  password: "1234567",
   port: 5432,
 });
 db.connect();
@@ -63,7 +63,14 @@ app.post("/add", async (req, res) => {
     );
 
     const data = result.rows[0];
-    const countryCode = data.country_code;
+    let countryCode = data.country_code;
+
+    if (countryCode === "IO") {
+
+      countryCode = "IN";
+
+    }
+
     try {
       await db.query(
         "INSERT INTO visited_countries (country_code, user_id) VALUES ($1, $2)",
