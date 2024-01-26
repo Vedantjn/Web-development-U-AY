@@ -9,7 +9,7 @@ let db = new pg.Client({
   user : "vedant",
   host : "localhost",
   database : "world",
-  password : "someone_from_github_will_steal_it",
+  password : "1235467",
   port : 5432
 })
 
