@@ -14,7 +14,7 @@ env.config();
 
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: "TOPSECRETWORD",
     resave: false,
     saveUninitialized: true,
   })
