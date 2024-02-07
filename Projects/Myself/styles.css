@@ -1,0 +1,219 @@
+body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  display: block;
+}
+
+/* Hero Section */
+
+#hero {
+  /* background-color: #e4f9f5; */
+  color: #11cdd4;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 60vh;
+  margin: 0;
+}
+.heroheading {
+    padding-top: 100px;
+    background-color: #e4f9f5;
+    position: relative;
+}
+div {
+  display: block;
+}
+#hero h1 {
+  font-size: 5.625rem;
+  /* margin: 150px auto 0 auto; */
+}
+#hero p {
+  font-size: 30px;
+}
+img {
+  display: block;
+  margin: auto;
+}
+#hero .cloud1 {
+  /* align-items: center; */
+  /* padding-left: 50px; */
+  position: absolute;
+  right: 400px;
+  top: 30px;
+}
+#hero .cloud2 {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+#hero .mountain {
+  width: 700px;
+  height: 400px;
+  margin-top: 90px;
+  top: 0px;
+  size: 598px 357px;
+}
+
+/* About me */
+#aboutme {
+    margin-top: 207px;
+}
+
+.aboutmeimage {
+  width: 180px;
+  border-radius: 50%;
+  /* padding-top: 100px; */
+}
+
+#aboutme h4 {
+  margin: 30px;
+  font-size: 2.5rem;
+  color: #66bfbf;
+}
+
+#aboutme p {
+  font-size: 1.5rem;
+}
+
+/* My Skills */
+
+/* .skillsheading{
+    color: #66bfbf;
+    font-weight: 2.5em;
+    margin-top: 200px;
+    font-size: 3em;
+}
+
+.skills1{
+    margin-top: 100px;
+    display: flex;
+}
+
+.skills2{
+    display: flex;
+}
+
+.skills1 img{
+    margin: 50px 50px 50px 50px
+}
+
+.skills2 img{
+    margin: 50px 50px 50px 50px 
+}
+
+.skills-text-data{
+    text-align: left;
+}
+
+.skills-text-data h3{
+    color: #067e7e;
+} */
+
+.skills{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    height: 200px;
+    text-align: left;
+    margin: 10px auto 0 auto;
+    gap: 40px;
+}
+
+.skillsheading{
+    margin-top: 180px;
+    margin-bottom: 50px;
+    color: #66bfbf;
+    font-weight:500;
+
+  }
+  
+#skills p{
+  font-size: 12px;
+}
+
+#skills img{
+    width: 60%;
+    border-radius: 5%;
+  }
+
+#skills h4{
+    margin-bottom: 20px;
+}
+
+#skills p{
+    font-size: 19px;
+}
+
+/* Get in touch */
+
+#getintouch{
+  height: 35vh;
+  margin-top: 300px;
+}
+
+.gith{
+  color: #66bfbf;
+  font-size: 2.5rem;
+}
+
+.gitsh{
+  color: #11999e;
+  font-size: 1.5rem;
+  margin-top: 25px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.gitp{
+  font-size: 20px;
+  margin-top: 31px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.gitb {
+  width: 126px;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);  font-size: 20px;
+  padding-left: 2px;  
+  border-radius: 10%;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.gitb>a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Footer */
+
+#footer{
+  background: #11999e;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 20vh;
+}
+
+.socials{
+  /* padding-top: 60px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 0px;
+}
+
+
+
+#footer a{
+  color: white;
+  text-decoration: none;
+  padding-top: 100px;
+}
+
+#footer p{
+  margin-top: 60px;
+}
